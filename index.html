@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Listas cheveres</title>
+  <style>
+    body {
+      font-family: system-ui;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 1fr 350px;
+    }
+    summary {
+      cursor: pointer;
+      outline: 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <h1>Hola mundo!</h1>
+    </section>
+    <nav>
+
+      <details open>
+        <summary>
+          INSTALLATION
+        </summary>
+        <ol>
+          <li>Getting Started</li>
+          <li>Add React to a Website</li>
+          <li>Create a New React App</li>
+          <li>CDN Links</li>
+        </ol>
+      </details>
+      <details>
+        <summary>
+          MAIN CONCEPTS
+        </summary>
+        <ol>
+
+          <li>React</li>
+          <li>React.Component</li>
+          <li>ReactDOM</li>
+          <li>ReactDOMServer</li>
+          <li>DOM Elements</li>
+          <li>SyntheticEvent</li>
+          <li>Test Utilities</li>
+          <li>Shallow Renderer</li>
+          <li>Test Renderer</li>
+          <li>JS Environment Requirements</li>
+          <li>Glossary</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary>
+          ADVANCED GUIDES
+        </summary>
+        <ol>
+          <li>Accessibility</li>
+          <li>Code-Splitting</li>
+          <li>Context</li>
+          <li>Error Boundaries</li>
+          <li>Forwarding Refs</li>
+          <li>Fragments</li>
+          <li>Higher-Order Components</li>
+          <li>Integrating with Other Libraries</li>
+          <li>JSX In Depth</li>
+          <li>Optimizing Performance</li>
+          <li>Portals</li>
+          <li>React Without ES6</li>
+          <li>React Without JSX</li>
+          <li>Reconciliation</li>
+          <li>Refs and the DOM</li>
+          <li>Render Props</li>
+          <li>Static Type Checking</li>
+          <li>Strict Mode</li>
+          <li>Typechecking With PropTypes</li>
+          <li>Uncontrolled Components</li>
+          <li>Web Components</li>
+        </ol>
+      </details>
+      <details>
+        <summary>
+          API REFERENCE
+        </summary>
+        <ol>
+          <li>React</li>
+          <li>React.Component</li>
+          <li>ReactDOM</li>
+          <li>ReactDOMServer</li>
+          <li>DOM Elements</li>
+          <li>SyntheticEvent</li>
+          <li>Test Utilities</li>
+          <li>Shallow Renderer</li>
+          <li>Test Renderer</li>
+          <li>JS Environment Requirements</li>
+          <li>Glossary</li>
+        </ol>
+      </details>
+
+
+      <details>
+        <summary>
+          HOOKS (NEW)
+        </summary>
+        <ol>
+          <li>Introducing Hooks</li>
+          <li>Hooks at a Glance</li>
+          <li>Using the State Hook</li>
+          <li>Using the Effect Hook</li>
+          <li>Rules of Hooks</li>
+          <li>Building Your Own Hooks</li>
+          <li>Hooks API Reference</li>
+          <li>Hooks FAQ</li>
+        </ol>
+      </details>
+      <details>
+        <summary>
+          CONTRIBUTING
+        </summary>
+        <ol>
+          <li>How to Contribute</li>
+          <li>Codebase Overview</li>
+          <li>Implementation Notes</li>
+          <li>Design Principles</li>
+        </ol>
+      </details>
+
+
+
+      <details>
+        <summary>
+          FAQ
+        </summary>
+        <ol>
+          <li>AJAX and APIs</li>
+          <li>Babel, JSX, and Build Steps</li>
+          <li>Passing Functions to Components</li>
+          <li>Component State</li>
+          <li>Styling and CSS</li>
+          <li>File Structure</li>
+          <li>Versioning Policy</li>
+          <li>Virtual DOM and Internals</li>
+        </ol>
+      </details>
+    </nav>
+  </main>
+
+  <script>
+    const $detailsList = document.querySelectorAll('details')
+    $detailsList.forEach(($details) => {
+      $details.querySelector('summary').addEventListener('click', expand)
+    })
+    function expand() {
+      $detailsList.forEach(($details) => {
+        $details.removeAttribute('open')
+      })
+    }
+  </script>
+</body>
+</html>
